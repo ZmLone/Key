@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JKBOPEE B.Sc. NPT 2026 Answer Key</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.8rem;
+        }
+        header p {
+            margin: 0;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .subject-section {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid var(--border);
+        }
+        .subject-title {
+            margin-top: 0;
+            color: var(--primary);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 10px;
+            margin-top: 1rem;
+        }
+        .q-box {
+            background: var(--bg-color);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 8px;
+            text-align: center;
+            font-weight: 500;
+        }
+        .q-num {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            display: block;
+            margin-bottom: 2px;
+        }
+        .q-ans {
+            color: var(--primary);
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>JKBOPEE B.Sc. NPT 2026 Answer Key</h1>
+        <p>A quick revision resource for entrance aspirants. Check your scores easily!</p>
+    </header>
+
+    <div class="container">
+        <div class="subject-section" id="physics">
+            <h2 class="subject-title">Physics (Q1 - Q60)</h2>
+            <div class="grid" id="grid-physics"></div>
+        </div>
+
+        <div class="subject-section" id="chemistry">
+            <h2 class="subject-title">Chemistry (Q61 - Q120)</h2>
+            <div class="grid" id="grid-chemistry"></div>
+        </div>
+
+        <div class="subject-section" id="biology">
+            <h2 class="subject-title">Biology (Q121 - Q180)</h2>
+            <div class="grid" id="grid-biology"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Compiled by a fellow aspirant. Best of luck with your results!</p>
+    </footer>
+
+    <script>
+        // The complete compiled answer key
+        const answers = {
+            1: 'A', 2: 'C', 3: 'C', 4: 'D', 5: 'A', 6: 'D', 7: 'C', 8: 'B', 9: 'A', 10: 'C',
+            11: 'A', 12: 'B', 13: 'B', 14: 'C', 15: 'B', 16: 'C', 17: 'C', 18: 'B', 19: 'C', 20: 'D',
+            21: 'D', 22: 'A', 23: 'B', 24: 'D', 25: 'B', 26: 'A', 27: 'C', 28: 'B', 29: 'A', 30: 'B',
+            31: 'B', 32: 'C', 33: 'C', 34: 'B', 35: 'A', 36: 'B', 37: 'B', 38: 'C', 39: 'C', 40: 'C',
+            41: 'B', 42: 'A', 43: 'A', 44: 'C', 45: 'B', 46: 'C', 47: 'A', 48: 'A', 49: 'A', 50: 'B',
+            51: 'A', 52: 'B', 53: 'B', 54: 'B', 55: 'C', 56: 'B', 57: 'B', 58: 'B', 59: 'B', 60: 'C',
+            61: 'A', 62: 'D', 63: 'B', 64: 'B', 65: 'C', 66: 'B', 67: 'B', 68: 'B', 69: 'B', 70: 'C',
+            71: 'B', 72: 'B', 73: 'C', 74: 'B', 75: 'B', 76: 'D', 77: 'B', 78: 'A', 79: 'D', 80: 'B',
+            81: 'A', 82: 'A', 83: 'B', 84: 'B', 85: 'B', 86: 'C', 87: 'C', 88: 'C', 89: 'B', 90: 'A',
+            91: 'A', 92: 'C', 93: 'A', 94: 'A', 95: 'C', 96: 'B', 97: 'B', 98: 'D', 99: 'D', 100: 'B',
+            101: 'B', 102: 'C', 103: 'A', 104: 'C', 105: 'C', 106: 'A', 107: 'C', 108: 'B', 109: 'B', 110: 'C',
+            111: 'B', 112: 'B', 113: 'A', 114: 'C', 115: 'B', 116: 'A', 117: 'A', 118: 'A', 119: 'A', 120: 'B',
+            121: 'C', 122: 'B', 123: 'A', 124: 'B', 125: 'C', 126: 'B', 127: 'B', 128: 'D', 129: 'A', 130: 'B',
+            131: 'B', 132: 'B', 133: 'B', 134: 'A', 135: 'B', 136: 'B', 137: 'C', 138: 'B', 139: 'A', 140: 'A',
+            141: 'C', 142: 'C', 143: 'B', 144: 'D', 145: 'A', 146: 'B', 147: 'D', 148: 'A', 149: 'B', 150: 'B',
+            151: 'B', 152: 'B', 153: 'C', 154: 'B', 155: 'C', 156: 'C', 157: 'C', 158: 'B', 159: 'B', 160: 'C',
+            161: 'A', 162: 'B', 163: 'B', 164: 'A', 165: 'B', 166: 'B', 167: 'B', 168: 'C', 169: 'B', 170: 'C',
+            171: 'B', 172: 'A', 173: 'C', 174: 'C', 175: 'B', 176: 'C', 177: 'C', 178: 'B', 179: 'C', 180: 'B'
+        };
+
+        function populateGrid(start, end, containerId) {
+            const container = document.getElementById(containerId);
+            for (let i = start; i <= end; i++) {
+                const box = document.createElement('div');
+                box.className = 'q-box';
+                box.innerHTML = `<span class="q-num">Q${i}</span><span class="q-ans">${answers[i]}</span>`;
+                container.appendChild(box);
+            }
+        }
+
+        // Render the grids on page load
+        populateGrid(1, 60, 'grid-physics');
+        populateGrid(61, 120, 'grid-chemistry');
+        populateGrid(121, 180, 'grid-biology');
+    </script>
+</body>
+</html>
